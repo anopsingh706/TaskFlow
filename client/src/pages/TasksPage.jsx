@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Plus, LayoutGrid, List, Filter } from 'lucide-react'
 import { useTasks } from '../context/TaskContext'
 import TaskBoard     from '../components/tasks/TaskBoard'
-import TaskList      from '../components/tasks/TaskList'
+import TaskList      from '../components/tasks/Tasklist'
 import CreateTaskModal from '../components/tasks/CreateTaskModal'
 import toast from 'react-hot-toast'
 
