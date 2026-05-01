@@ -7,7 +7,10 @@
  */
 export default function GoogleSignInButton({ label = 'Continue with Google' }) {
   const handleClick = () => {
-    const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+    // Get the base URL and ensure it doesn't have trailing slashes or /api/auth paths
+    let apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000'
+    apiBase = apiBase.replace(/\/api\/auth\/.*$/, '').replace(/\/api\/?$/, '').replace(/\/+$/, '')
+    
     const oauthUrl = `${apiBase}/api/auth/google`
     
     console.log('Redirecting to OAuth:', oauthUrl)
