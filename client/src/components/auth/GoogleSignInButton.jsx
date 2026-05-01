@@ -7,9 +7,11 @@
  */
 export default function GoogleSignInButton({ label = 'Continue with Google' }) {
   const handleClick = () => {
-    // Navigate the browser to the backend OAuth initiation endpoint
     const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000'
-    window.location.href = `${apiBase}/api/auth/google`
+    const oauthUrl = `${apiBase}/api/auth/google`
+    
+    console.log('Redirecting to OAuth:', oauthUrl)
+    window.location.href = oauthUrl
   }
 
   return (
