@@ -62,7 +62,7 @@ export default function ChatList({ channels, activeChannel, onSelect, onChannelC
   }
 
   return (
-    <div className="w-72 flex-shrink-0 flex flex-col border-r border-gray-100 bg-white">
+    <div className="w-full min-w-0 flex-1 flex flex-col bg-white">
       {/* Header */}
       <div className="px-4 pt-4 pb-3 border-b border-gray-100">
         <div className="flex items-center justify-between mb-3">

@@ -34,12 +34,12 @@ export default function ChatPage() {
   }
 
   return (
-    <div className="flex h-full overflow-hidden relative">
+    <div className="flex h-full w-full min-w-0 overflow-hidden overflow-x-hidden relative">
 
       {/* ── Chat List ── */}
       {/* Desktop: always visible (sm:flex). Mobile: visible only when showList=true */}
       <div className={`
-        flex-shrink-0 w-full sm:w-72 border-r border-gray-100 bg-white
+        w-full sm:w-72 sm:min-w-[18rem] flex-shrink-0 min-w-0 border-r border-gray-100 bg-white
         ${showList ? 'flex' : 'hidden sm:flex'}
       `}>
         <ChatList
@@ -55,7 +55,7 @@ export default function ChatPage() {
       {/* ── Chat Window ── */}
       {/* Desktop: always visible (sm:flex). Mobile: visible only when showList=false */}
       <div className={`
-        flex-1 min-w-0
+        w-full flex-1 min-w-0
         ${showList ? 'hidden sm:flex' : 'flex'}
       `}>
         {activeChannel ? (
