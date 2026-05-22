@@ -1,4 +1,4 @@
-# ⚡ TaskFlow — AI Communication Platform
+# ⚡ TaskFlow — Team collaboration Platform
 
 Live demo: https://task-flow-me3d.vercel.app/
 > Real-time team chat, task management, video meetings, and AI-powered summaries — all in one place.
