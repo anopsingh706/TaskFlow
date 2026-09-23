@@ -198,7 +198,7 @@ The frontend uses a dark-first design with:
 Reusable CSS classes are in `client/src/index.css` under `@layer components`:
 `btn-primary`, `btn-secondary`, `btn-ghost`, `btn-danger`, `input`, `card`, `card-hover`, `glass`, `badge-*`, `nav-item`, `nav-item-active`
 
----
+----
 
 ## 📝 Notes for Next Phase
 
